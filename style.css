@@ -1,0 +1,277 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body
+{
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.container
+{
+  width: 350px;
+  margin: 32px auto;
+}
+
+.app
+{
+  width: 360px;
+  height: 700px;
+  background: #424242;
+  overflow: hidden;
+
+  
+}
+
+.header
+{
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.header img
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(1px);
+  opacity: 1;
+}
+
+.header .city
+{
+  position: absolute;
+  color: rgba(255,255,255,0.8);
+  width: 100%;
+  display: block;
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px;
+}
+
+
+
+.header .city .today
+{
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgba(255,255,255,0.6);
+}
+
+.header .weather
+{
+  position: absolute;
+  width: 100%;
+  height: 232px;
+  display: block;
+  color: rgba(255,255,255,0.9);
+  text-align: center;
+  margin-top: 120px;
+  font-size: 155px;
+  
+}
+
+.header .temp
+{
+  position: absolute;
+  font-size: 75px;
+  font-weight: 100;
+  left: 0px;
+  margin-top: -60px;
+  margin-left: 10px;
+  text-shadow: none;
+}
+
+.header .temp .unit
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 50px;
+  font-weight: 500;
+  margin-right: -25px;
+  margin-top: -8px;
+}
+
+
+
+
+.wiatr
+{
+    
+  position: absolute;
+  font-size: 100px;
+  font-weight: 600;
+  right: 0;
+  margin-right: 30px;
+  margin-top: -54px;
+  
+  
+  text-align: right;
+  
+}
+.napis{
+    color: rgb(255, 255, 255);
+    opacity: 0.6;
+    
+}
+
+
+.header .weather .day
+{
+  position: absolute;
+  font-size: 37px;
+  font-weight: 100;
+  text-transform: uppercase;
+  bottom: 5px;
+  right: 0;
+  margin-right: 10px;
+  text-shadow: none;
+  opacity: 1;
+  z-index: 10;
+}
+
+
+
+.header:before,
+.header:after
+{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100px;
+  display: block;
+  z-index: 9;
+}
+
+.header:before
+{
+  bottom: 0;
+  box-shadow: inset 0 -60px 50px -25px #424242;
+}
+
+
+.body span.title
+{
+  position: relative;
+  top: 10px;
+  z-index: 9;
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.opady{
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    color: rgba(255, 255, 255, 0.555);
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+
+
+
+.footer
+{
+  position: relative;
+  top: 25px;
+  
+  height: 150px;
+  
+}
+
+.footer span.title
+{
+  position: relative;
+  top: -10px;
+  z-index: 9;
+  margin-left: 10px;
+  font-size: 11px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.3);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.footer ul
+{
+  width: 95%;
+  position: relative;
+  top: 8px;
+  margin-left: -2px;
+}
+
+.footer ul li
+{
+  position: relative;
+  float: left;
+  text-align: center;
+  list-style: none;
+  width: 25%;
+  color: rgba(255,255,255,0.3);
+  font-size: 12px;
+}
+
+
+
+
+.container {
+    position: relative;
+    padding: 20px 50px;
+    
+}
+
+.input {
+    width: 260px;
+    border: 3px solid #fff;
+    background: transparent;
+    padding: 15px 30px;
+    border-radius: 50px;
+    outline: none;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+.close-btn {
+    position: absolute;
+    top: 21px;
+    right: 140px;
+    cursor: pointer;
+    color: #0099ff;
+    background: #fff;
+    border: 0px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+    outline: none;
+    margin-top: 30px;
+    font-weight: bold;
+}
+.close-btn:hover,
+.close-btn:active {
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    transition: background-color 0.3s ease-in, background-color 0.3s ease-in;
+}
